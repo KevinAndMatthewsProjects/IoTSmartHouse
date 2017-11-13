@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up</title>
+   
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+ <body>
+
+      
+</div> 
+
+<center>
+
+   <div id="login">   
+      <div class="form">
+       <h1>Create an IoT SmartHouse Account!</h1>
+      
+          
+          <form  action="createAccount.php" method="POST" >
+             
+          
+           <div class="field-wrap">
+               
+ 
+            <form name="createAccount">
+                
+                
+            <input name="name"
+type="name" required autocomplete="off" placeholder="Full Name" id="name">
+                
+                <br>
+                
+                <input
+name="username" type="text" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required autocomplete="off" placeholder="Email Address">
+
+          </div>
+         
+        <div class="field-wrap">
+           
+            <input name="password"
+type="password" required autocomplete="off" placeholder="Password" id="password">
+
+<br>
+<input name = "password_confirm" type="password" placeholder="Confirm Password" id="password_confirm" oninput= "check(this)" required>
+<script language='javascript' type='text/javascript'>
+    function check(input) {
+        if (input.value != document.getElementById('password').value) {
+            input.setCustomValidity('Passwords Must Match!');
+        } else {
+            input.setCustomValidity('');
+        }
+    }
+</script>
+
+          </div>
+          <h2 style="color:#FFFFFF;">Already have an account?</h2><a href="login.html">Click Here to Login</a>
+          <br>
+             <br>
+             <br>
+           <input class="button fit" type="submit">
+            </div>
+   
+   </center>
+    
+    
+  </body>
+</html>
